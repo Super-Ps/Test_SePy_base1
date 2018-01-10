@@ -8,7 +8,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium import  webdriver
 
-# from SE_TEST.BasePage import basefunction
+# from ObjectPage.ObjectPage import basefunction
 #
 # class LoginPage(basefunction):
 

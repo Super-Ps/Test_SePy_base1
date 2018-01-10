@@ -53,7 +53,7 @@ class Login_test(unittest.TestCase):
     #     self.assertEqual(result,excpet_result)
 
         # 登录成功
-    @Screen(driver)
+    #@Screen(driver)
     def test_login01(self):
         ''' 登陆成功！验证登陆账号 '''
         self.base.open("http://bbs.makex.cc/portal.php")
@@ -62,7 +62,7 @@ class Login_test(unittest.TestCase):
                                                "3433201@qq.com")
         self.assertEqual(result, True, msg='登录失败：%s != %s' % (result, True))
 
-    @Screen(driver)
+    #@Screen(driver)
     def test_login02(self):
         ''' 退出登陆成功，验证退出后状态'''
         self.login.system_exit()
@@ -70,7 +70,7 @@ class Login_test(unittest.TestCase):
                                                "立即1注册")
         self.assertEqual(result, True, msg='退出失败：%s != %s' % (result, True))
 
-    @Screen(driver)
+    #@Screen(driver)
     def test_login03(self):
 
         ''' 登陆有效账号，密码为空，验证提示：抱歉，密码空或包含非法字符 '''

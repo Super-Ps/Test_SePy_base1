@@ -13,7 +13,7 @@ import os
 
 
 # case路劲
-case_path = os.path.join(os.getcwd(), "CASE_TEST\\Unittest")
+case_path = os.path.join(os.getcwd(), "Action_Case_Test\\Unittest")
 print(case_path)
 
 report_path = os.path.join(os.getcwd(), "Report")
