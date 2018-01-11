@@ -40,8 +40,8 @@ if __name__ == "__main__":
     runner = HTMLTestRunner(stream=fp,
                        title ="全量执行测试报告",
                        description = "具体执行情况",
-                        verbosity =2,
-                            retry=1)
+                        verbosity =2)
+                            #retry=1)
 
     runner.run(all_case())
 

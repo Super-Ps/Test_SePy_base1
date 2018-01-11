@@ -10,7 +10,7 @@ import time
 
 from selenium.webdriver.common.action_chains import ActionChains
 
-from SE_TEST.DecoratorScreen import Screen
+from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
 
 driver = webdriver.Chrome()
 

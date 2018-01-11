@@ -5,16 +5,11 @@
 # Date: 2017/12/26
 
 import unittest
-
 from time import sleep as s
-
 from selenium import webdriver
-
-from SE_TEST.BaiduHome import baidupage
-
-from SE_TEST.BasePage import basefunction
-
-from SE_TEST.DecoratorScreen import Screen
+from Test_SePy_base1.ObjectPage.BaiduHome import baidupage
+from Test_SePy_base1.ObjectPage.BasePage import basefunction
+from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
 
 
 
@@ -32,15 +27,15 @@ class BaiDuLogin_Test(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         pass
-
+    @Screen
     def test_search01(self):
         self.base.open("https://www.baidu.com")
         #self.base.
         self.bd.baidu_input_text("selenium")
-
+    @Screen
     def test_search02(self):
         #self.base.open("https://www.baidu.com")
-        self.bd.baidu_click(22)
+        self.bd.baidu_click()
 
 
 

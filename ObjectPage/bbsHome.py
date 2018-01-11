@@ -7,7 +7,7 @@
 
 from selenium import webdriver
 
-from SE_TEST.BasePage import basefunction
+from Test_SePy_base1.ObjectPage.BasePage import basefunction
 
 from time import sleep as s
 
@@ -24,9 +24,6 @@ class Bbshmoe(basefunction):
 
     # 社区讨论 查看帖子第一行
     search_loc = ("xpath", ".//*[@id='index']/div[1]/div[2]/div[3]/div[1]/div[2]/a")
-
-
-
 
 
     # 点击登录按钮
@@ -73,5 +70,5 @@ class Bbshmoe(basefunction):
 #
 #     driver=webdriver.Chrome()
 #     bb=Bbshmoe(driver)
-#     bb.open("http://bbs.makex.cc/portal.php")
-#     bb.login("3433201@qq.com","jy123456")
+#     bb.open("xxxx")
+#     bb.login("xxxx","yyyy")

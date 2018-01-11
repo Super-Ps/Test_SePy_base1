@@ -13,7 +13,7 @@ from selenium import  webdriver
 # class LoginPage(basefunction):
 
 
-from SE_TEST.BasePage import basefunction
+from Test_SePy_base1.ObjectPage.BasePage import basefunction
 
 
 
