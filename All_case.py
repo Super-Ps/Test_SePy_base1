@@ -4,7 +4,7 @@
 # Email: jonnysps@yeah.net
 # Date: 2017/12/26
 
-from HTMLTestRunner import HTMLTestRunner
+#from HTMLTestRunner import HTMLTestRunner
 from HTMLTestRunner_JONNY import HTMLTestRunner
 import smtplib
 from email.mime.text import MIMEText
@@ -16,17 +16,18 @@ import os
 
 
 # case路劲
-case_path = os.path.join(os.getcwd(), "Action_Case_Test\\Unittest")
+case_path = os.path.join("./", "Action_Case_Test/Unittest")
 print(case_path)
 
 
 # 报告存放路径
-report_path = os.path.join(os.getcwd(), "Report")
+report_path = os.path.join("./", "Report")
 print(report_path)
 
 # 报告路劲
-report_dir = 'D:/git_local/Test_SePy_base1/Report/'
+#report_dir = 'D:/git_local/Test_SePy_base1/Report/'
 
+report_dir = './Report/'
 
 
 def all_case():
@@ -82,7 +83,7 @@ def git_max_repor():
     print('排序前的列表： ', lists_count)
     # print(os.path.getmtime(result_dir))
     # print(os.path.getctime(result_dir))
-    lists_count.sort(key=lambda x: os.path.getmtime(report_dir +'\\'+ x)if not os.path.isdir(report_dir +'\\'+x) else 0)
+    lists_count.sort(key=lambda x: os.path.getmtime(report_dir +'/'+ x)if not os.path.isdir(report_dir +'/'+x) else 0)
     print("排序后的列表：", lists_count)
     # 组合目录与最新文件
     max_file = os.path.join(report_dir, lists_count[-1])
