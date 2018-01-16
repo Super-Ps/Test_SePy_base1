@@ -19,22 +19,11 @@ report_dir = 'D:/git_local/Test_SePy_base1/Report/'
 
 
 def send_mail(max_file,from_addr="jonny.peng@makeblock.com",to_addr="jonny.peng@makeblock.com",
-              account="jonny.peng@makeblock.com",passwd_ssl="G6sNcvPkE2GWWQPb",
+              account="jonny.peng@makeblock.com",passwd_ssl="~~~~~~~",
               smtpserver="smtp.exmail.qq.com"):
     nowitme = time.strftime("%Y_%m_%d_%H_%M_%S")
 
-# sender = "jonny.peng@makeblock.com"  # "jonny.peng@makeblock.com " #"jonnypss@163.com"  # 发送邮箱
-#
-# receiver = "jonny.peng@makeblock.com"  # "jonny.peng@makeblock.com"#"jonnyps@yeah.net"    #dextor.liu@makeblock.com
-#
-# smtpserver = "smtp.exmail.qq.com"  # smtp.exmail.qq.com"  #  smtp.163.com"  # 发送邮件服务器
-#
-# email_username = "jonny.peng@makeblock.com"  # "jonny.peng@makeblock.com"#"jonnypss@163.com"  # 发送邮箱账号 密码
-#
-# email_pwd = "jy123456"  # "jy123456","274094800"
-#
-# email_ssl = "G6sNcvPkE2GWWQPb"
-    #boy = '<p> 哈哈哈哈哈哈哈哈</p>'
+
     f= open(max_file, 'rb')
     mailcontent_s = f.read()
     f.close()

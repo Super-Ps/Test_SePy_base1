@@ -51,9 +51,9 @@ class Login_test(unittest.TestCase):
     def test_login01(self):
         ''' 登陆成功！验证登陆账号 '''
         self.base.open("http://bbs.makex.cc/portal.php")
-        self.login.logins("3433201@qq.com", "jy123456")
+        self.login.logins("3433201@qq.com", "~~~~~~")
         result = self.login.is_text_in_element(("xpath", ".//*[@id='nv_portal']/div[3]/div[1]/div[3]/div[1]/a"),
-                                               "3433201@qq.com")
+                                               "~~~~~~~")
         self.assertEqual(result, True, msg='登录失败：%s != %s' % (result, True))
 
     @Screen(driver)
