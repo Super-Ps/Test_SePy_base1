@@ -26,7 +26,7 @@ class BaiDuLogin_Test(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        pass
+
         cls.driver.quit()
     #@Screen
     def test_search01(self):
