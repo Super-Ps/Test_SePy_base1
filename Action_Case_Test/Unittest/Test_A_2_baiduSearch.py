@@ -34,7 +34,7 @@ class BaiDuLogin_Test(unittest.TestCase):
         #self.base.
         self.bd.baidu_input_text("selenium")
 
-        self.assertEqual()
+        #self.assertEqual()
    # @Screen
     def test_search02(self):
         #self.base.open("https://www.baidu.com")
