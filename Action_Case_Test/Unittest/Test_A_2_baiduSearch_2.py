@@ -7,9 +7,9 @@
 import unittest
 from time import sleep as s
 from selenium import webdriver
-#from Test_SePy_base1.ObjectPage.BaiduHome import baidupage
-#from Test_SePy_base1.ObjectPage.BasePage import basefunction
-#from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
+from Test_SePy_base1.ObjectPage.BaiduHome import baidupage
+from Test_SePy_base1.ObjectPage.BasePage import basefunction
+from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
 
 
 #@unittest.skip

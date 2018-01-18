@@ -10,7 +10,7 @@ from Test_SePy_base1.ObjectPage.bbsHome import Bbshmoe
 from Test_SePy_base1.ObjectPage.BasePage import basefunction
 from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
 
-@unittest.skip("无条件跳过此测试类")
+#@unittest.skip("无条件跳过此测试类")
 class Login_test(unittest.TestCase):
 
     driver = webdriver.Chrome()

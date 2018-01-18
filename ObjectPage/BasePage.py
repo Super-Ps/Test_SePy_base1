@@ -162,6 +162,6 @@ class basefunction(object):
 #     sleep(3)
 #     a.send_keys(username_name,"3433201@qq.com")
 #     sleep(20)
-#     a.send_keys(password_name, "jy123456")
+#     a.send_keys(password_name, "~~~~~")
 #     a.click(lgoin_name)
 

@@ -4,9 +4,16 @@
 # Email: jonnysps@yeah.net
 # Date: 2017/12/26
 
+
+import sys
+sys.path.append("/usr/local/git_d_local/Test_SePy_base1/Action_Case_Test/Unittest")
+#sys.path.append("..")
+
+print(sys.path)
 import unittest
 from time import sleep as s
 from selenium import webdriver
+
 from Test_SePy_base1.ObjectPage.BaiduHome import baidupage
 from Test_SePy_base1.ObjectPage.BasePage import basefunction
 from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
