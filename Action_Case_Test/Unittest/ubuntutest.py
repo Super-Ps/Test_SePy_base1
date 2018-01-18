@@ -8,6 +8,7 @@
 import os
 from selenium import webdriver
 
+from Test_SePy_base1.Report.importtest import grt_time
 
 
 
@@ -15,6 +16,7 @@ from selenium import webdriver
 d=webdriver.Chrome()
 d.get("https:www.baidu.com")
 
+a=grt_time()
 
-
-print(d.title)
+print("标题是：%s" % d.title)
+print("时间是：%s" % a)
