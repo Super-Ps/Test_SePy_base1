@@ -12,7 +12,7 @@ from Test_SePy_base1.ObjectPage.BasePage import basefunction
 from Test_SePy_base1.ObjectPage.DecoratorScreen import Screen
 
 
-#@unittest.skip
+@unittest.skip
 class BaiDuLogin_Test(unittest.TestCase):
 
     driver = webdriver.Chrome()

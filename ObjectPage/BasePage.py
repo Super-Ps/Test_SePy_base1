@@ -26,7 +26,7 @@ class basefunction(object):
         #self.base_url = base_url
 
     ''' 请求url 判断title '''
-    def open(self, url, t='百度搜索', timeout=10):
+    def open(self, url, t='百度一下，你就知道', timeout=10):
 
         self.driver.get(url)
         self.driver.maximize_window()
